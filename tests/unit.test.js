@@ -1,4 +1,4 @@
-const { calculator } = require('../app');
+const {calculator} = require('../app');
 
 describe('Calculator Unit Tests', () => {
     describe('Addition', () => {
@@ -31,6 +31,10 @@ describe('Calculator Unit Tests', () => {
         test('should return null for division by zero', () => {
             expect(calculator.divide(10, 0)).toBe(null);
         });
+    });
+
+    afterAll((done) => {
+        server.close(done);
     });
 });
 

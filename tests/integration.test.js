@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { app, server } = require('../app');
+const {app, server} = require('../app');
 
 describe('Calculator API Integration Tests', () => {
     afterAll((done) => {
